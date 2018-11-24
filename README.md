@@ -1,5 +1,10 @@
 # hugo-theme-even
 
+[![GitHub contributors](https://img.shields.io/github/contributors/olOwOlo/hugo-theme-even.svg?colorB=green)](https://github.com/olOwOlo/hugo-theme-even/contributors)
+[![GitHub release](https://img.shields.io/github/release/olOwOlo/hugo-theme-even.svg?colorB=green)](https://github.com/olOwOlo/hugo-theme-even/releases)
+[![GitHub commits (since latest release)](https://img.shields.io/github/commits-since/olOwOlo/hugo-theme-even/latest.svg?colorB=green)](https://github.com/olOwOlo/hugo-theme-even/compare)
+[![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/olOwOlo/hugo-theme-even/blob/master/LICENSE.md)
+
 A super concise theme for Hugo
 
 > It's a port of the [hexo-theme-even](https://github.com/ahonn/hexo-theme-even)
@@ -17,6 +22,8 @@ $ git clone https://github.com/olOwOlo/hugo-theme-even themes/even
 ```
 
 **Important:** Take a look inside the [`exampleSite`](https://github.com/olOwOlo/hugo-theme-even/tree/master/exampleSite) folder of this theme. You'll find a file called [`config.toml`](https://github.com/olOwOlo/hugo-theme-even/blob/master/exampleSite/config.toml). **To use it, copy the [`config.toml`](https://github.com/olOwOlo/hugo-theme-even/blob/master/exampleSite/config.toml) in the root folder of your Hugo site.** Feel free to change it.
+
+**NOTE:** For this theme, you should use **post** instead of **posts**, namely `hugo new post/some-content.md`.
 
 ## Language Support
 
@@ -55,7 +62,7 @@ You can customize something for a single content in the content's front-matter. 
 
 ## Shortcodes
 
-This theme provides `center`,` right`, `left`,` music` four shortcodes, and support `center`,` right`, `left` class for the built-in `figure`. See more information from [there](https://blog.olowolo.com/example-site/post/shortcodes/).
+This theme provides `center`,` right`, `left`,` music`, `admonition` shortcodes, and support `center`,` right`, `left` class for the built-in `figure`. See more information from [there](https://blog.olowolo.com/example-site/post/shortcodes/).
 
 ## Theme Color 
 
@@ -65,10 +72,14 @@ There are five built-in theme colors ( Default | Mint Green | Cobalt Blue | Hot 
 
 If you changed any file under `/src/`, you need to rebuild. 
 ```bash
-cd ./themes/even/src/
-npm install
-npm run build
+cd ./themes/even/
+# install dependencies
+yarn install
+# build
+yarn build
 ```
+
+_You need to install **[Yarn](https://yarnpkg.com/)** and **[Node.js](https://nodejs.org/)** first._
 
 ## Update Theme
 
